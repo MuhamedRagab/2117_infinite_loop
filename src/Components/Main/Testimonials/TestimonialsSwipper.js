@@ -26,10 +26,15 @@ export default function TestimonialsSwipper({ swiperData }) {
           clickable: true,
         }}
         breakpoints={{
+          1080: {
+            width: 1080,
+            slidesPerView: 3,
+          },
           // when window width is >= 1030px
           680: {
             width: 680,
             slidesPerView: 2,
+            spaceBetween: 30,
           },
           // when window width is >= 640px
           320: {
