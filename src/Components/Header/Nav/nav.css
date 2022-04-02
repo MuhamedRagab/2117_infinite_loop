@@ -1,6 +1,3 @@
-#nav-phone {
-  display: none;
-}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -34,66 +31,12 @@
   background-color: var(--light-blue);
 }
 
-@media (max-width: 900px) {
-  #nav {
-    display: none;
+@media (max-width: 768px) {
+  .nav__logo {
+    font-size: 1.2rem;
   }
-  #nav-phone {
-    display: block;
-    align-items: baseline;
+  .nav__link {
+    font-size: 0.7rem;
+    padding-inline: 10px;
   }
-  nav.nav-phone div:nth-child(1) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-  }
-  nav.nav-phone div #menu {
-    margin-right: 15px;
-    color: #fff;
-    font-size: 1.9rem !important;
-    border-radius: 7px;
-    border: 1px solid #fff;
-    padding: 10px 15px;
-    cursor: pointer;
-  }
-  nav.nav-phone .phone-links {
-    background-color: #fff;
-    width: 96.5%;
-    margin-inline: auto;
-    z-index: 30;
-    border-radius: 7px;
-    height: 0;
-    color: #707070;
-    transition: 0.3s ease;
-    margin-top: 5px;
-  }
-  nav.nav-phone div ul {
-    display: block;
-    width: 100%;
-  }
-  nav.nav-phone ul li a {
-    text-align: right;
-    display: none;
-    padding-block: 20px;
-  }
-}
-
-/* Scroll */
-.nav.nav-scroll {
-  background-color: #fff;
-}
-.nav__logo.logo-srcoll,
-.link-srcoll {
-  color: var(--title-blue);
-}
-
-.link-srcoll:hover {
-  background-color: var(--title-blue);
-  color: #fff;
-}
-
-.menuIcon-scroll {
-  color: var(--title-blue) !important;
-  border-color: #000 !important;
 }
