@@ -1,0 +1,20 @@
+.gallery {
+  padding-block: 50px;
+}
+.gallery__article {
+  text-align: center;
+  margin-block: 60px;
+}
+.gallery__article--title {
+  color: var(--title-blue);
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.gallery__article--para {
+  margin-inline: auto;
+  width: 50%;
+  margin-block: 30px;
+  color: #707070;
+  line-height: 25px;
+}

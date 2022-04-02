@@ -1,0 +1,122 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery .swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide p {
+  width: 75%;
+  line-height: 30px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: 0px;
+}
+
+.gallery
+  .swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 15px);
+  background-color: var(--title-blue);
+  padding: 8px;
+}
+.gallery__images {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  cursor: pointer;
+}
+
+.gallery__images:hover::before {
+  content: "";
+  position: absolute;
+  background-color: #4a3753;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.gallery__images::after {
+  content: "";
+  position: absolute;
+  background-color: var(--title-blue);
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.gallery__images:hover::after {
+  height: 3%;
+  opacity: 1;
+}
+
+.gallery__images--image {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 !important;
+  display: block;
+  object-fit: cover;
+}
+
+.gallery__images--title {
+  width: 100%;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-40%);
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+.gallery__images:hover .gallery__images--title {
+  bottom: 8%;
+  opacity: 1;
+}
+
+.gallery__images--title span {
+  font-weight: 300;
+}

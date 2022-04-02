@@ -1,0 +1,121 @@
+.contact {
+  min-height: 80vh;
+  padding-block: 50px;
+  background-image: url("../../img/infinite-loop-03.jpg");
+  background-size: 110% 130%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+.contact__article {
+  margin-block: 60px;
+  text-align: center;
+}
+.contact__article--title {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+.contact__article--para {
+  font-size: 1.2rem;
+  margin-top: 40px;
+  line-height: 40px;
+  width: 78%;
+  margin-inline: auto;
+}
+
+.contact__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 70%;
+  margin-inline: auto;
+}
+.contact__content--form {
+  flex-grow: 1;
+}
+.contact__content--form button {
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: var(--light-blue);
+  width: 50%;
+  padding-block: 15px;
+  margin-block: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.contact__content--form button:hover {
+  background-color: var(--title-blue);
+}
+.contact__content--form input,
+textarea {
+  border: 1px solid #fff;
+  padding: 15px;
+  background: transparent;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  border-radius: 7px;
+}
+.contact__content--form input::placeholder,
+textarea::placeholder {
+  color: #fff;
+}
+.contact__content--form > textarea {
+  height: 170px;
+  resize: vertical;
+}
+
+.contact__content--icons {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.contact__content--icons ul li {
+  margin-bottom: 60px;
+  margin-top: 30px;
+  width: 50%;
+  margin-inline: auto;
+}
+.contact__content--icons ul li a {
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+}
+.contact__content--icons ul li a:hover {
+  color: var(--title-blue);
+}
+.contact__content--icons ul li a span {
+  margin-left: 15px;
+  font-size: 1.1rem;
+}
+
+.contact__content--icons ul li a > i.icon {
+  transition: 0.3s ease;
+  font-size: 2.5rem !important;
+  color: #fff;
+}
+
+.contact__content--icons ul li a:hover i {
+  color: var(--title-blue);
+}
+
+.copy-right {
+  width: fit-content;
+  margin-inline: auto;
+  margin-top: 120px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* Media */
+
+@media (max-width: 768px) {
+  .contact__content {
+    flex-direction: column;
+    width: 90%;
+  }
+  .contact__article--para {
+    font-size: 0.9rem;
+  }
+}

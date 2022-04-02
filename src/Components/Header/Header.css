@@ -1,0 +1,52 @@
+.header {
+  min-height: 100vh;
+  background-image: url(../../img/infinite-loop-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  background-attachment: fixed;
+}
+.header__article {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 2px 2px 5px #111;
+}
+.header__article--headding {
+  font-size: 3.825rem;
+  font-weight: 400;
+}
+.header__article--para {
+  font-size: 1.425rem;
+  margin-top: 30px;
+  font-weight: 300;
+  line-height: 3rem;
+}
+.header > .fa-arrow-down {
+  position: absolute;
+  left: 50%;
+  top: 82%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  cursor: pointer;
+  background: #357;
+  padding: 15px 40px;
+  transition: 0.3s ease-out;
+}
+
+.fa-arrow-down:hover {
+  color: #fff;
+  background: #37a;
+  padding: 20px 50px;
+}
+
+/* Media Query */
+
+@media (max-width: 750px) {
+  .header__article {
+    width: 100%;
+  }
+}
