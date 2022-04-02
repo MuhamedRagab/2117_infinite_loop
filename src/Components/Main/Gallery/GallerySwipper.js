@@ -47,7 +47,7 @@ export default function TestimonialsSwipper({ galleryData }) {
       >
         <>
           {galleryData.map((e) => (
-            <SwiperSlide key={e.id}>
+            <SwiperSlide key={Math.random()}>
               <div className="gallery__images">
                 <img
                   className="gallery__images--image"

@@ -2,56 +2,6 @@ import React from "react";
 import "./nav.css";
 
 const Nav = () => {
-  const nav = document.querySelectorAll(".nav");
-  const logo = document.querySelectorAll(".nav__logo");
-  const links = document.querySelectorAll(".nav__link");
-  const menuIcon = document.getElementById("menu");
-
-  window.onscroll = () => {
-    if (window.scrollY >= 200) {
-      nav.forEach((e) => {
-        e.classList.add("nav-scroll");
-      });
-
-      logo.forEach((logo) => {
-        logo.classList.add("logo-srcoll");
-      });
-
-      links.forEach((link) => {
-        link.classList.add("link-srcoll");
-      });
-
-      menuIcon.classList.add("menuIcon-scroll");
-    } else {
-      nav.forEach((e) => {
-        e.classList.remove("nav-scroll");
-      });
-
-      logo.forEach((logo) => {
-        logo.classList.remove("logo-srcoll");
-      });
-
-      links.forEach((link) => {
-        link.classList.remove("link-srcoll");
-      });
-
-      menuIcon.classList.remove("menuIcon-scroll");
-    }
-  };
-  const menu = document.querySelector(".phone-links");
-  const toggleMenu = () => {
-    if (menu.style.height === "324px") {
-      menu.style.height = "0px";
-      links.forEach((link) => {
-        link.style.display = "none";
-      });
-    } else {
-      menu.style.height = "324px";
-      links.forEach((link) => {
-        link.style.display = "block";
-      });
-    }
-  };
   return (
     <>
       <nav id="nav" className="nav ">
@@ -134,5 +84,56 @@ const Nav = () => {
     </>
   );
 };
-
 export default Nav;
+
+const nav = document.querySelectorAll(".nav");
+const logo = document.querySelectorAll(".nav__logo");
+const links = document.querySelectorAll(".nav__link");
+const menuIcon = document.getElementById("menu");
+
+window.onscroll = () => {
+  if (window.scrollY >= 300) {
+    nav.forEach((e) => {
+      e.classList.add("nav-scroll");
+    });
+
+    logo.forEach((logo) => {
+      logo.classList.add("logo-srcoll");
+    });
+
+    links.forEach((link) => {
+      link.classList.add("link-srcoll");
+    });
+
+    menuIcon.classList.add("menuIcon-scroll");
+  } else {
+    nav.forEach((e) => {
+      e.classList.remove("nav-scroll");
+    });
+
+    logo.forEach((logo) => {
+      logo.classList.remove("logo-srcoll");
+    });
+
+    links.forEach((link) => {
+      link.classList.remove("link-srcoll");
+    });
+
+    menuIcon.classList.remove("menuIcon-scroll");
+  }
+};
+
+const menu = document.querySelector(".phone-links");
+const toggleMenu = () => {
+  if (menu.style.height === "324px") {
+    menu.style.height = "0px";
+    links.forEach((link) => {
+      link.style.display = "none";
+    });
+  } else {
+    menu.style.height = "324px";
+    links.forEach((link) => {
+      link.style.display = "block";
+    });
+  }
+};

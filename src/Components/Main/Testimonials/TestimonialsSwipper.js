@@ -47,7 +47,7 @@ export default function TestimonialsSwipper({ swiperData }) {
       >
         <>
           {swiperData.map((e) => (
-            <SwiperSlide key={e.id}>
+            <SwiperSlide key={Math.random()}>
               <img src={e.image} alt="img" />
               <p className=".testimonials__article--para">{e.description}</p>
               <h4 className=".testimonials__article--para jop">{e.jop}</h4>
