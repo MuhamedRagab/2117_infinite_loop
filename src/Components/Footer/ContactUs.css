@@ -68,7 +68,6 @@ textarea::placeholder {
 
 .contact__content--icons {
   flex-grow: 1;
-  margin-inline: auto;
   width: 50%;
 }
 

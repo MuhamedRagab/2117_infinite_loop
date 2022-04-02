@@ -38,7 +38,7 @@ export default function TestimonialsSwipper({ swiperData }) {
           },
           // when window width is >= 640px
           320: {
-            width: 0,
+            width: 320,
             slidesPerView: 1,
             spaceBetween: 50,
           },
