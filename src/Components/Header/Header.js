@@ -12,7 +12,9 @@ const Header = () => {
           Bootstrap 4.0 Parallax Theme <br /> Free HTML Template by TOOPLATE
         </p>
       </article>
-      <i className="fas fa-2x fa-arrow-down tm-down-arrow"></i>
+      <a href="#what-we-do">
+        <i className="fas fa-2x fa-arrow-down tm-down-arrow"></i>
+      </a>
     </header>
   );
 };

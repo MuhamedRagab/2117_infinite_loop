@@ -1,7 +1,7 @@
 :root {
   --light-blue: #369;
   --title-blue: #37a;
-  --light-red: #D40;
+  --light-red: #d40;
 }
 * {
   padding: 0;
@@ -13,6 +13,9 @@
   border: none;
   list-style: none;
   text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

@@ -66,6 +66,9 @@
 /* Media */
 
 @media (max-width: 1030px) {
+  html {
+    font-size: 12px;
+  }
   .what__content > .row-1,
   .row-2 {
     grid-template-columns: 1fr;

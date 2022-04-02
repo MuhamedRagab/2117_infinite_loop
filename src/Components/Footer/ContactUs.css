@@ -80,13 +80,16 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   transition: 0.3s ease;
+  min-width: 150px;
 }
 .contact__content--icons ul li a:hover {
   color: var(--title-blue);
 }
 .contact__content--icons ul li a span {
+  display: inline-block;
   margin-left: 15px;
   font-size: 1.1rem;
+  width: 350px;
 }
 
 .contact__content--icons ul li a > i.icon {
@@ -114,8 +117,5 @@ textarea::placeholder {
   .contact__content {
     flex-direction: column;
     width: 90%;
-  }
-  .contact__article--para {
-    font-size: 0.9rem;
   }
 }
